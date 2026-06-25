@@ -5,10 +5,9 @@ spring:
   application:
     name: votingsystem
   
-  # --- H2 Database ---
+  # --- Database Configuration ---
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:h2:file:../data/testdb;DB_CLOSE_ON_EXIT=FALSE}
-    driverClassName: org.h2.Driver
     username: ${SPRING_DATASOURCE_USERNAME:sa}
     password: ${SPRING_DATASOURCE_PASSWORD:1234}
   
